@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.rinko1231.femaleplasticsurgery.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ClientConfigurationMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
