@@ -7,6 +7,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import com.wildfire.main.config.Configuration;
 import org.spongepowered.asm.mixin.Shadow;
 
+
 @Mixin(Configuration.class)
 public class ClientConfigurationMixin {
     @Final
@@ -15,7 +16,6 @@ public class ClientConfigurationMixin {
 
     @Final @Shadow public static final FloatConfigKey BREASTS_OFFSET_Y = new FloatConfigKey("breasts_yOffset", 0.0F, (float) SurgeryConfig.getInstance().getBustOffsetYMin(), 1.0F);
     @Final @Shadow public static final FloatConfigKey BREASTS_OFFSET_Z = new FloatConfigKey("breasts_zOffset", 0.0F, (float) SurgeryConfig.getInstance().getBustOffsetZMin(), (float) SurgeryConfig.getInstance().getBustOffsetZMax());
-
     @Final @Shadow public static final FloatConfigKey BOUNCE_MULTIPLIER = new FloatConfigKey("bounce_multiplier", 0.333F, 0.0F, (float) SurgeryConfig.getInstance().getBounceMultiplierMax());
     @Final @Shadow public static final FloatConfigKey FLOPPY_MULTIPLIER = new FloatConfigKey("floppy_multiplier", 0.75F, 0.25F, (float) SurgeryConfig.getInstance().getFloppyMultiplierMax());
 }
