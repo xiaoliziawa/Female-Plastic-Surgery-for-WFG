@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "femaleplasticsurgery",
+  "version": "${version}",
+  "name": "femaleplasticsurgery",
+  "description": "Modify the upper and lower limits of certain bust-related parameters in the Wildfire's Female Gender mod.",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/femaleplasticsurgery/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.rinko1231.femaleplasticsurgery.client.FemaleplasticsurgeryClient"
+    ],
+    "main": [
+      "com.rinko1231.femaleplasticsurgery.Femaleplasticsurgery"
+    ]
+  },
+  "mixins": [
+    "femaleplasticsurgery.mixins.json",
+    {
+      "config": "femaleplasticsurgery.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
